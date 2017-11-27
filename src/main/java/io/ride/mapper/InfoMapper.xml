@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="io.ride.dao.InfoDao">
+
+    <insert id="add" useGeneratedKeys="true" keyProperty="id" parameterType="io.ride.model.Info">
+        INSERT INTO t_info (username, content) VALUES (#{username}, #{content})
+    </insert>
+
+    <delete id="del">
+        DELETE FROM t_info
+        WHERE id = #{id}
+    </delete>
+
+    <select id="list" resultType="io.ride.model.Info">
+        SELECT *
+        FROM t_info
+    </select>
+
+    <select id="findById" resultType="io.ride.model.Info">
+        SELECT *
+        FROM t_info
+        WHERE id = #{id};
+    </select>
+</mapper>
