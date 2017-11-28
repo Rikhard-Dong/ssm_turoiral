@@ -37,20 +37,21 @@ public class InfoDaoTest {
 
     @Test
     public void add() throws Exception {
-/*        Info info = new Info();
+        Info info = new Info();
         info.setUsername("ride");
         info.setContent("this is content!");
         info.setId(0);
         int result = infoDao.add(info);
-        assertEquals(result, 1);*/
+        System.out.println(info.getId());
+        assertEquals(result, 1);
     }
 
     @Test
     public void addBatch() {
-        /*for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < 99; i++) {
             Info info = new Info("username" + i, "content is " + i);
             infoDao.add(info);
-        }*/
+        }
     }
 
     @Test

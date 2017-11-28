@@ -20,6 +20,6 @@
     <select id="findById" resultType="io.ride.model.Info">
         SELECT *
         FROM t_info
-        WHERE id = #{id};
+        WHERE id = #{id}
     </select>
 </mapper>

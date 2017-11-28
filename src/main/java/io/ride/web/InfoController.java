@@ -55,4 +55,13 @@ public class InfoController {
             return new Result(false, "删除失败!");
         }
     }
+
+    @RequestMapping("/test")
+    @ResponseBody
+    public Object test() {
+        Map<String, Object> map = new HashMap<String,  Object>();
+        map.put("username", "test");
+        map.put("address", "ningbo");
+        return map;
+    }
 }

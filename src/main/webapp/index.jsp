@@ -9,7 +9,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <h1>INFO</h1>
+            <h1>Welcome INFO</h1>
         </div>
         <div class="col-md-12">
             <hr>
@@ -57,6 +57,7 @@
         </div>
         <%-- 分页信息 --%>
         <div class="col-md-10 col-md-offset-1" id="pagination">
+
         </div>
     </div>
 
@@ -77,6 +78,7 @@
         /* 默认加载第一页 */
         toPage(1);
     });
+
     <%-- 提交表单给服务器处理 --%>
     $('#submitBtn').click(function () {
         $.ajax({
